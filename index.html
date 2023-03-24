@@ -34,89 +34,144 @@
             text-decoration: underline;
         }
     </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/ZZ6l/a2Q8DX7FtI8w5/yyrr5l8eyzM5VpFghV6D" crossorigin="anonymous">
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBcuF0Kddz8tM4fE4d9sp0lMGU4TlF7HA2QGuTf1zzW526Qj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>[Your Name] - AI & Robotics Researcher</h1>
-    <hr>
+    <div class="container">
+        <h1 class="my-4">[Your Name] - AI & Robotics Researcher</h1>
 
-    <h2>About Me</h2>
-    <p>
-        Hello! I'm [Your Name], a passionate researcher in the fields of Artificial Intelligence and Robotics. I hold a [Degree Level] degree in [Field] from [University Name] and have [Number] years of experience working in academia and industry. My research interests include [specific areas of AI & Robotics, e.g., Reinforcement Learning, Computer Vision, Human-Robot Interaction, etc.]. Feel free to explore my work and get in touch with any questions or collaboration opportunities.
-    </p>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="about-tab" data-bs-toggle="tab" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="education-tab" data-bs-toggle="tab" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="publications-tab" data-bs-toggle="tab" href="#publications">Publications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="projects-tab" data-bs-toggle="tab" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="awards-tab" data-bs-toggle="tab" href="#awards">Awards & Honors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="skills-tab" data-bs-toggle="tab" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact">Contact</a>
+            </li>
+        </ul>
 
-    <h2>Education</h2>
-    <ul>
-        <li>
-            <strong>[Degree Level, e.g., Ph.D., M.Sc., B.Sc.] in [Field]</strong> - [University Name], [Year of Completion]
-            <ul>
-                <li>Thesis: [Title of your thesis]</li>
-                <li>Advisor: [Advisor's Name]</li>
-            </ul>
-        </li>
-        <li>
-            <strong>[Degree Level, e.g., Ph.D., M.Sc., B.Sc.] in [Field]</strong> - [University Name], [Year of Completion]
-            <ul>
-                <li>Thesis: [Title of your thesis]</li>
-                <li>Advisor: [Advisor's Name]</li>
-            </ul>
-        </li>
-    </ul>
+        <div class="tab-content mt-4">
+            <!-- Replace the content within the square brackets [] with your actual information -->
+            <!-- About -->
+            <div class="tab-pane active" id="about" role="tabpanel" aria-labelledby="about-tab">
+                <h2>About Me</h2>
+                <p>
+                    Hello! I'm [Your Name], a passionate researcher in the fields of Artificial Intelligence and Robotics. I hold a [Degree Level] degree in [Field] from [University Name] and have [Number] years of experience working in academia and industry. My research interests include [specific areas of AI & Robotics, e.g., Reinforcement Learning, Computer Vision, Human-Robot Interaction, etc.]. Feel free to explore my work and get in touch with any questions or collaboration opportunities.
+                </p>
+            </div>
 
-    <h2>Publications</h2>
-    <ol>
-        <li>
-            [Your Last Name], [Initials]., [Co-Author Last Name, Initials]., & [Co-Author Last Name, Initials]. (Year). [Title of the Publication]. [Conference/Journal Name], [Issue, if applicable], [Page numbers]. [DOI or URL, if available]
-        </li>
-        <li>
-            [Your Last Name], [Initials]., [Co-Author Last Name, Initials]., & [Co-Author Last Name, Initials]. (Year). [Title of the Publication]. [Conference/Journal Name], [Issue, if applicable], [Page numbers]. [DOI or URL, if available]
-        </li>
-    </ol>
+            <!-- Education -->
+            <div class="tab-pane" id="education" role="tabpanel" aria-labelledby="education-tab">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>[Degree Level, e.g., Ph.D., M.Sc., B.Sc.] in [Field]</strong> - [University Name], [Year of Completion]
+                        <ul>
+                            <li>Thesis: [Title of your thesis]</li>
+                            <li>Advisor: [Advisor's Name]</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>[Degree Level, e.g., Ph.D., M.Sc., B.Sc.] in [Field]</strong> - [University Name], [Year of Completion]
+                        <ul>
+                            <li>Thesis: [Title of your thesis]</li>
+                            <li>Advisor: [Advisor's Name]</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-    <h2>Research Projects</h2>
-    <ul>
-        <li>
-            <strong>[Project Title]</strong> - [Institution/Organization, Dates]
-            <br>
-            Brief description of 
-                        the project and your role in it. Mention key technologies, algorithms, or frameworks used.
-        </li>
-        <li>
-            <strong>[Project Title]</strong> - [Institution/Organization, Dates]
-            <br>
-            Brief description of the project and your role in it. Mention key technologies, algorithms, or frameworks used.
-        </li>
-    </ul>
+            <!-- Publications -->
+            <div class="tab-pane" id="publications" role="tabpanel" aria-labelledby="publications-tab">
+                <h2>Publications</h2>
+                <ol>
+                    <li>
+                        [Your Last Name], [Initials]., [Co-Author Last Name, Initials]., & [Co-Author Last Name, Initials]. (Year). [Title of the Publication]. [Conference/Journal Name], [Issue, if applicable], [Page numbers]. [DOI or URL, if available]
+                    </li>
+                    <li>
+                        [Your Last Name], [Initials]., [Co-Author Last Name, Initials]., & [Co-Author Last Name, Initials]. (Year). [Title of the Publication]. [Conference/Journal Name], [Issue, if applicable], [Page numbers]. [DOI or URL, if available]
+                    </li>
+                </ol>
+            </div>
 
-    <h2>Awards & Honors</h2>
-    <ul>
-        <li>[Name of the Award] - [Organization/Institution], [Year]</li>
-        <li>[Name of the Award] - [Organization/Institution], [Year]</li>
-    </ul>
+            <!-- Projects -->
+            <div class="tab-pane" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+               <h2>Research Projects</h2>
+                <ul>
+                    <li>
+                        <strong>[Project Title]</strong> - [Institution/Organization, Dates]
+                        <br>
+                        Brief description of the project and your role in it. Mention key technologies, algorithms, or frameworks used.
+                    </li>
+                    <li>
+                        <strong>[Project Title]</strong> - [Institution/Organization, Dates]
+                        <br>
+                        Brief description of the project and your role in it. Mention key technologies, algorithms, or frameworks used.
+                    </li>
+                </ul>
+            </div>
 
-    <h2>Skills & Technologies</h2>
-    <ul>
-        <li><strong>Programming Languages:</strong> [List of programming languages, e.g., Python, C++, Java, etc.]</li>
-        <li><strong>Frameworks & Libraries:</strong> [List of frameworks & libraries, e.g., TensorFlow, PyTorch, ROS, etc.]</li>
-        <li><strong>Tools & Platforms:</strong> [List of tools & platforms, e.g., Git, Docker, Jupyter, etc.]</li>
-        <li><strong>AI & Robotics Techniques:</strong> [List of specific techniques, e.g., Deep Learning, Reinforcement Learning, SLAM, etc.]</li>
-    </ul>
+            <!-- Awards & Honors -->
+            <div class="tab-pane" id="awards" role="tabpanel" aria-labelledby="awards-tab">
+                <h2>Awards & Honors</h2>
+                <ul>
+                    <li>[Name of the Award] - [Organization/Institution], [Year]</li>
+                    <li>[Name of the Award] - [Organization/Institution], [Year]</li>
+                </ul>
+            </div>
 
-    <h2>Contact</h2>
-    <ul>
-        <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-        <li>LinkedIn: <a href="[LinkedIn profile URL]" target="_blank">[LinkedIn profile URL]</a></li>
-        <li>Google Scholar: <a href="[Google Scholar profile URL]" target="_blank">[Google Scholar profile URL]</a></li>
-        <li>Twitter: <a href="https://twitter.com/your_twitter_handle" target="_blank">@your_twitter_handle</a></li>
-    </ul>
-    <p>
-        Feel free to reach out for any inquiries, collaboration opportunities, or just to chat about AI & Robotics!
-    </p>
-    <hr>
-    <p>
-        <em>[Your Name] © [Current Year]. All rights reserved.</em>
-    </p>
+            <!-- Skills -->
+            <div class="tab-pane" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                <h2>Skills & Technologies</h2>
+                <ul>
+                    <li><strong>Programming Languages:</strong> [List of programming languages, e.g., Python, C++, Java, etc.]</li>
+                    <li><strong>Frameworks & Libraries:</strong> [List of frameworks & libraries, e.g., TensorFlow, PyTorch, ROS, etc.]</li>
+                    <li><strong>Tools & Platforms:</strong> [List of tools & platforms, e.g., Git, Docker, Jupyter, etc.]</li>
+                    <li><strong>AI & Robotics Techniques:</strong> [List of specific techniques, e.g., Deep Learning, Reinforcement Learning, SLAM, etc.]</li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="tab-pane" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <h2>Contact</h2>
+                <ul>
+                    <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                    <li>LinkedIn: <a href="[LinkedIn profile URL]" target="_blank">[LinkedIn profile URL]</a></li>
+                    <li>Google Scholar: <a href="[Google Scholar profile URL]" target="_blank">[Google Scholar profile URL]</a></li>
+                    <li>Twitter: <a href="https://twitter.com/your_twitter_handle" target="_blank">@your_twitter_handle</a></li>
+                </ul>
+                <p>
+                    Feel free to reach out for any inquiries, collaboration opportunities, or just to chat about AI & Robotics!
+                </p>
+                <hr>
+                <p>
+                    <em>[Your Name] © [Current Year]. All rights reserved.</em>
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
+
 
 </html>
 
